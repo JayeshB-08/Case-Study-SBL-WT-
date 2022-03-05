@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/6ca3c01af7.js"></script>
+    <link rel="stylesheet" href="/case study/style_form.css">
+    
+    <title>Rating/Feedback Form</title>
+    
+</head>
+<body onload="document.form1.text1.focus()">
+    <form name="form1" action="#"> 
+
+    <div class="mail">
+        <label for="email" id="mailbox">Enter your email</label>
+        <input type="email" name="text1" >
+    </div>
+
+    <br>
+    
+    <div class="container1">
+        <label for="type_coffee" id="txt1">What type of coffee did you order?</label><br>
+        <div class="selcof">
+            Espresso<input type="checkbox" name="type_coffee"  value="Espresso">
+            Americano<input type="checkbox" name="type_coffee"  value="Americano">
+            Cappuccino<input type="checkbox" name="type_coffee"  value="Cappuccino">
+            Latte<input type="checkbox" name="type_coffee"  value="Latte">    
+            Mocha<input type="checkbox" name="type_coffee"  value="Mocha">
+        </div>
+    </div>
+    
+    <br>
+    
+    <div class="container2">
+        <p>Rate your coffee</p>
+        <div class="star-widget">
+            <input type="radio" name="rate" value="1" id="rate-5">
+            <label for="rate-5" class="fa fa-star" ></label>
+            <input type="radio" name="rate" value="2" id="rate-4">
+            <label for="rate-4"class="fa fa-star" ></label>
+            <input type="radio" name="rate" value="3" id="rate-3">
+            <label for="rate-3"class="fa fa-star" ></label>
+            <input type="radio" name="rate" value="4" id="rate-2">
+            <label for="rate-2" class="fa fa-star"></label>
+            <input type="radio" name="rate" value="5" id="rate-1">
+            <label for="rate-1"class="fa fa-star" ></label>
+        </div>
+    </div>   
+    
+    <br>
+    
+    <textarea wrap="off"cols="50" rows="10" placeholder="Remember to be nice ;)"></textarea>
+    
+    <input type="submit" name="validate" value="Submit" onclick="ValidateEmail(document.form1.text1)"> 
+    </form>
+
+   <script src="/case study/email.js"></script> 
+
+</body>
+</html>
